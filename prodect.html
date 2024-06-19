@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      * {
+    margin: 0;
+}
+
+body {
+    /* height: 100%; */
+    width: 100%;
+}
+
+/* HOME */
+
+/* animations */
+.scroll-watcher {
+    height: 8px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 0, 0.61);
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+
+.card,
+p,
+img {
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: 450px;
+}
+
+@keyframes fade-in {
+    from {
+        scale: 0.8;
+        opacity: 0.5;
+    }
+
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes scroll-watcher {
+    to {
+        scale: 1 1;
+    }
+}
+
+
+
+.navs h3 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navs-bar img {
+    height: 300px;
+    width: 350px;
+    position: relative;
+    left: -20px;
+    /* border-radius: 50%; */
+    margin-left: -30rem;
+    margin-top: 25px;
+}
+
+/* NAV BAR */
+.navs {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+}
+
+
+.navs-bar {
+    height: 75px;
+    width: 100%;
+    background-color: rgba(131, 30, 30, 0.999);
+    /* font-size: 0.8rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.navs-text {
+    color: #fdfcfa;
+}
+
+.navs-text:hover {
+    color: rgb(16, 207, 73);
+}
+.img1 img{
+  position: relative;
+  top: 200px;
+  border: 5px solid rgb(75, 54, 54);
+  border-radius: 20px;
+}
+.img2 img{
+  position: relative;
+  top: 200px;
+  display:flex;
+  margin-left: 400px;
+  margin-top: -300px;
+  height: 305px;
+  width: 305px;
+  border: 5px solid rgb(105, 86, 86);
+  border-radius: 20px;
+}
+.img3 img{
+  position: relative;
+  top: 200px;
+  margin-left: 900px;
+  margin-top: -300px;
+  height: 305px;
+  width: 305px;
+  border: 5px solid rgb(74, 60, 60);
+  border-radius: 20px;
+
+}
+.img4 img{
+  position: relative;
+  top: 200px;
+  margin-left: 30px;
+  margin-top: 100px;
+  height: 305px;
+  width: 305px;
+  border: 5px solid rgb(103, 91, 91);
+  border-radius: 20px;
+
+}
+.img5 img{
+  position: relative;
+  top: 200px;
+  margin-left: 400px;
+  margin-top: -500px;
+  height: 305px;
+  width: 305px;
+  border: 5px solid rgb(123, 110, 110);
+  border-radius: 20px;
+
+}
+.img6 img{
+  position: relative;
+  top: 200px;
+  margin-left: 900px;
+  margin-top: -300px;
+  height: 305px;
+  width: 305px;
+  border: 5px solid rgb(147, 135, 135);
+  border-radius: 20px;
+
+}
+h2{
+  position: relative;
+  top: 200px;
+  color:crimson;
+  font-size:30px;
+  -webkit-text-stroke:1px rgb(111, 15, 15);
+  font-style: italic;
+  
+}
+.gh1 img{
+    position: relative;
+  top: 200px;
+  margin-left: 900px;
+  margin-top:150px;
+  height: 305px;
+  width: 305px;
+  border: 5px solid rgb(147, 135, 135);
+  border-radius: 20px;
+}
+.gh2 img{
+    position: relative;
+  top: 200px;
+  display:flex;
+  margin-left: 400px;
+  margin-top: -300px;
+  height: 305px;
+  width: 305px;
+  border: 5px solid rgb(105, 86, 86);
+  border-radius: 20px;
+} 
+.gh3 img{
+  position: relative;
+  margin-top: -120px;
+  border: 5px solid rgb(75, 54, 54);
+  border-radius: 20px;
+  height: 305px;
+  width: 305px;
+}
+  </style>
+</head>
+<body style="background:url(https://worldofprintables.com/wp-content/uploads/2023/06/light-yellow-desktop-wallpaper.jpg);">
+  <div class="scroll-watcher"></div>
+  
+  <!-- NAV BAR -->
+  <div class="navs">
+      <div class="navs-bar">
+          <a href="" target="_blank"><img src="C:\web\html\css\gheelogo.png" alt="" ></a>
+          <a href="ghee.html" class="navs-text" style="text-decoration: none;">
+              <h3>Home</h3>
+          </a>
+          <a href="about.html" class="navs-text" style="text-decoration: none;">
+              <h3>About</h3>
+              </a>
+          <a href="prodect.html" class="navs-text" style="text-decoration: none;">
+              <h3>prodect</h3>
+          </a>
+
+          <a href="brand.html" class="navs-text" style="text-decoration: none;">
+              <h3>brand</h3>
+          </a>
+
+          <a href="contect.html" class="navs-text" style="text-decoration: none;">
+              <h3>Contact</h3>
+          </a>
+      </div>
+      
+  </div>
+  <h2>SWEET</h2>
+  <div class="img1"><img src="https://srmsweets.com/online/wp-content/uploads/2019/06/540-300x300.jpg" alt=""></div>
+  <div class="img2"><img src="https://shridauji.com/images/product/desighee/pro21.jpg" alt=""></div>
+  <div class="img3"><img src="https://m.media-amazon.com/images/I/819UdRTjktL.jpg" alt=""></div>
+  <div class="img4"><img src="https://i.ytimg.com/vi/uV7hwEsKIyU/maxresdefault.jpg" alt=""></div>
+  <div class="img5"><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/7fcf03a2605d0e7d928cc5926ad50f6d" alt=""></div>
+  <div class="img6"><img src="https://lmbsweets.com/wp-content/uploads/2020/11/1542614352_BadamHalwa-600x600.png" alt=""></div>
+  <div><img src="" alt=""></div><br>
+  <br>
+  <center><h2><u>GHEE</u></h2></center>
+  <div class="gh1"><img src="C:\web\html\myproject\Black White Simple Manager Logo Template (2).png" alt=""></div>
+   <div class="gh2"><img src="C:\web\html\myproject\White And Black Modern Abstract Beauty Logo.png" alt=""></div>
+   <div class="gh3"><img src="C:\web\html\myproject\Elegant Circle Signature Photography Logo.png" alt=""></div>
+  
+  
+</body>
+</html>
